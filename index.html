@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content=" Membuat layout website sederhana menggunakan HTML dan CSS">
+	<title> Syifa Lutfia || Membuat layout website sederhana menggunakan HTML dan CSS</title>
+	<style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+ 
+body
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+ 
+body {
+    background: #eee;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+ 
+hr {
+    border:0;
+    background:#dedede;
+    height:1px;
+}       
+ 
+header{
+    text-align: center;
+    color: #232323;
+}
+ 
+header .judul{
+    font-size: 17pt;
+}
+ 
+header .deskripsi{
+    font-size: 11pt;
+}
+ 
+.wrap {
+    width: 950px;
+    margin:25px auto;
+}
+ 
+nav.menu ul {
+    overflow:hidden;
+    color:#fff;
+    list-style: none;
+    float:left;
+    padding:0;
+    width: 650px;
+    margin:0 0 0;
+    background: #1abc9c;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+    box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+}
+ 
+nav.menu ul li {
+    margin:0;
+    float:left;
+}
+ 
+nav.menu ul a {
+    padding:25px;
+    display:block;
+    font-weight:600;
+    font-size: 16px;
+    color:#fff;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+ 
+nav.menu ul a:hover {
+    text-decoration: underline;
+    background:#16a085;
+}
+ 
+.sidebar {
+    float:right;
+    width:275px;
+}
+ 
+.sidebar .widget {
+    padding:25px;
+    margin:0 0 25px;
+    background:#fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.5s ease;
+}
+ 
+.sidebar .widget:hover {
+    border-bottom: 2px solid #3498db;
+}
+ 
+.sidebar .widget h2 {
+    padding:0;
+    margin:0 0 15px;
+    color:#3498db;
+    font-size: 18px;
+    font-weight:800;
+    text-transform: uppercase;
+}
+ 
+.sidebar .widget p {
+    font-size: 14px;
+}
+ 
+.sidebar .widget p:last-child {
+    margin:0;
+}
+ 
+.blog {
+    float:left;
+}
+ 
+.conteudo {
+    width:600px;
+    padding:25px;
+    margin:25px auto;
+    background: #fff;
+    border:1px solid #dedede;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+    box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+}
+ 
+.conteudo img {
+    min-width: 650px;
+    margin:0 0 25px -25px;
+    max-width: 650px;
+}
+ 
+.conteudo h1 {
+    padding:0;
+    margin:0 0 15px;
+    font-weight: normal;
+    color: #666;
+    font-family: Georgia;
+}
+ 
+.conteudo p:last-child {
+    margin: 0;
+}
+ 
+.conteudo .continue-lendo {
+    color:#000;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-weight: 700; 
+}
+ 
+.conteudo .continue-lendo:hover {
+    margin-left:10px;
+}
+ 
+.post-info {
+    float: right;
+    font-size: 12px;
+    margin: -10px 0 15px;
+    text-transform: uppercase;
+}
+ 
+@media screen and (max-width: 960px) {
+ 
+    .header {
+        position:inherit;
+    }
+ 
+    .wrap {
+        width: 90%;
+        margin:25px auto;
+    }
+    .sidebar {
+        width:100%;
+        margin:25px 0 0;
+        float:right;
+    }
+ 
+    .sidebar .widget {
+        padding:5%;
+    }
+ 
+    nav.menu ul {
+        width: 100%;
+    }
+ 
+    nav.menu ul {
+        float:inherit;
+    }
+ 
+    nav.menu ul li {
+        float:inherit;
+        margin:0;
+    }
+ 
+    nav.menu ul a {
+        padding:15px;
+        font-size: 16px;
+        border-top:1px solid #1abf9f;
+        border-bottom:1px solid #16a085;
+    }
+ 
+    .blog {
+        width:90%;
+    }
+ 
+    .conteudo {
+        float:inherit;
+        margin:0 auto 25px;
+        width:101%;
+        border:1px solid #dedede;
+        padding:5%;  
+        background: #fff;
+    }
+ 
+    .conteudo img {
+        max-width: 110%;
+        margin:0 0 25px -5%;
+        min-width: 110%;
+    }
+ 
+    .conteudo .continue-lendo:hover {
+        margin-left:0;
+    }
+ 
+ 
+}
+ 
+@media screen and (max-width: 460px) {
+ 
+    nav.menu ul a {
+        padding:15px;
+        font-size: 14px;
+    }
+ 
+    .sidebar {
+        display:none
+    }
+    .post-info {
+        display:none;
+    }
+ 
+    .conteudo {
+        margin:25px auto;
+    }
+ 
+    .conteudo img {
+        margin:-5% 0 25px -5%;
+    }           
+}
+</style>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>web responsive</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <!-- bagian header template -->
+    <header>
+        <h1 class="judul">Syifa</h1>
+        <p class="deskripsi">Tutorial pemrograman web, mobile dan desktop lengkap berbahasa indonesia. dari dasar hingga mahir.</p>
+    </header>
+    <!-- akhir bagian header template -->
+    
+    <div class="wrap">
+        <!-- bagian menu         -->
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Tutorial</a>
+                </li>
+                <li>
+                    <a href="#">Kontak</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- akhir bagian menu -->
+ 
+        <!-- bagian sidebar website -->
+        <aside class="sidebar">
+            <div class="widget">
+                <h2>Tutorial</h2>
+                <p>Selamat datang di www.Syifa.com, situs ini menyediakan tutorial pemrograman web, mobile & desktop.</p>
+            </div>
+            <div class="widget">
+                <h2>Ebook Gratis</h2>
+                <p>Teman-teman bisa mendapatkan ebook tutorial gratis di sini <a target="_blank" href="https://www.malasngoding.com">www.Syifa.com</a>.</p>
+            </div>
+        </aside>
+        <!-- akhir bagian sidebar website -->
+ 
+        <!-- bagian konten Blog -->
+        <div class="blog">
+            <div class="conteudo">
+                <div class="post-info">
+                    Di Posting Oleh <b>Syifa Lutfia</b>
+                </div>
+                <img src="https://www.malasngoding.com/wp-content/uploads/2016/02/tutorial-css-bahasa-indonesia.png">
+                <h1> Template Sederhana HTML & CSS </h1>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>                
+                <a href="#" class="continue-lendo">Selengkapnya →</a>
+            </div>
+            <div class="conteudo">
+                <div class="post-info">
+                    Di Posting Oleh <b>Syifa Lutfia</b>
+                </div>
+                <img src="https://www.malasngoding.com/wp-content/uploads/2016/02/tutorial-html-bahasa-indonesia.png">
+                <h1> Belajar HTML Lengkap </h1>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>                
+                <a href="#" class="continue-lendo">Selengkapnya →</a>
+            </div>
+        </div>
+        <!-- akhir bagian konten Blog -->
+    </div>
+ 
+</body>
+</html>
+
